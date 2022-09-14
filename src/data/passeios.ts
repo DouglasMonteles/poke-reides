@@ -1,7 +1,7 @@
 export const passeios: any = [
   {
-    "Aracaju": {
-      "City Tour Aracaju": [
+    "Recanto das Emas": {
+      "City Tour Recanto das Emas": [
         {
           "inicio": "08:00",
           "fim": "12:00"
@@ -48,7 +48,7 @@ export const passeios: any = [
     }
   },
   {
-    "Belem": {
+    "Taguatinga": {
       "Região do Ver-o-Peso": [
         {
           "inicio": "17:30",
@@ -108,7 +108,7 @@ export const passeios: any = [
     }
   },
   {
-    "Belo Horizonte": {
+    "Guara": {
       "Museu das Minas e do Metal": [
         {
           "inicio": "12:00",
@@ -184,7 +184,7 @@ export const passeios: any = [
     }
   },
   {
-    "Boa Vista": {
+    "Riacho Fundo 1": {
       "Igreja Matriz": [
         {
           "inicio": "07:00",
@@ -348,7 +348,7 @@ export const passeios: any = [
     }
   },
   {
-    "Campo Grande": {
+    "Riacho Fundo 2": {
       "Museu da Arte Contemporânea": [
         {
           "inicio": "07:00",
@@ -426,7 +426,7 @@ export const passeios: any = [
     }
   },
   {
-    "Campo Grande": {
+    "Riacho Fundo 2": {
       "Museu de História Natural Casa Dom Aquino": [
         {
           "inicio": "08:00",
@@ -534,7 +534,7 @@ export const passeios: any = [
     }
   },
   {
-    "Curitiba": {
+    "Gama": {
       "Bosque do Papa": [
         {
           "inicio": "06:00",
@@ -658,7 +658,7 @@ export const passeios: any = [
     }
   },
   {
-    "Cuiaba": {
+    "Asa Sul": {
       "Igreja Matrix": [
         {
           "inicio": "12:00",
@@ -668,7 +668,7 @@ export const passeios: any = [
     },
   },
   {
-    "Florianopolis": {
+    "Ceilandia": {
       "Passeio para Ilha do Campeche": [
         {
           "inicio": "10:00",
@@ -704,7 +704,7 @@ export const passeios: any = [
     }
   },
   {
-    "Fortaleza": {
+    "Asa Norte": {
       "Mercado dos Peixes": [
         {
           "inicio": "10:00",

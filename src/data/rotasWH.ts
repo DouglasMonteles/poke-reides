@@ -1,71 +1,71 @@
 export const rotasWH: any = [
   {
-    "Aracaju:Maceio": 294,
-    "Aracaju:Salvador": 356
+    "Recanto das Emas:Maceio": 294,
+    "Recanto das Emas:Salvador": 356
   },
   {
-    "Belem:Sao Luis": 806,
-    "Belem:Palmas": 1283,
-    "Belem:Cuiaba": 2941,
-    "Belem:Manaus": 5298,
-    "Belem:Macapa": 2173,
-    "Belem:Boa Vista": 6083
+    "Taguatinga:Sao Luis": 806,
+    "Taguatinga:Palmas": 1283,
+    "Taguatinga:Asa Sul": 2941,
+    "Taguatinga:Manaus": 5298,
+    "Taguatinga:Macapa": 2173,
+    "Taguatinga:Riacho Fundo 1": 6083
   },
   {
-    "Macapa:Belem": 2173
+    "Macapa:Taguatinga": 2173
   },
   {
-    "Belo Horizonte:Rio de Janeiro": 434,
-    "Belo Horizonte:Vitoria": 524,
-    "Belo Horizonte:Sao Paulo": 586,
-    "Belo Horizonte:Campo Grande": 1453,
-    "Belo Horizonte:Goiania": 906,
-    "Belo Horizonte:Brasilia": 716,
-    "Belo Horizonte:Salvador": 1372
+    "Guara:Rio de Janeiro": 434,
+    "Guara:Vitoria": 524,
+    "Guara:Sao Paulo": 586,
+    "Guara:Riacho Fundo 2": 1453,
+    "Guara:Goiania": 906,
+    "Guara:Brasilia": 716,
+    "Guara:Salvador": 1372
   },
   {
-    "Boa Vista:Manaus": 785,
-    "Boa Vista:Belem": 6083
+    "Riacho Fundo 1:Manaus": 785,
+    "Riacho Fundo 1:Taguatinga": 6083
   },
   {
-    "Brasilia:Belo Horizonte": 716,
+    "Brasilia:Guara": 716,
     "Brasilia:Goiania": 209
   },
   {
-    "Campo Grande:Cuiaba": 694,
-    "Campo Grande:Goiania": 934,
-    "Campo Grande:Belo Horizonte": 1453,
-    "Campo Grande:Sao Paulo": 1014,
-    "Campo Grande:Curitiba": 991
+    "Riacho Fundo 2:Asa Sul": 694,
+    "Riacho Fundo 2:Goiania": 934,
+    "Riacho Fundo 2:Guara": 1453,
+    "Riacho Fundo 2:Sao Paulo": 1014,
+    "Riacho Fundo 2:Gama": 991
   },
   {
-    "Cuiaba:Porto Velho": 1456,
-    "Cuiaba:Manaus": 2357,
-    "Cuiaba:Belem": 2941,
-    "Cuiaba:Palmas": 1784,
-    "Cuiaba:Goiania": 934,
-    "Cuiaba:Campo Grande": 694
+    "Asa Sul:Porto Velho": 1456,
+    "Asa Sul:Manaus": 2357,
+    "Asa Sul:Taguatinga": 2941,
+    "Asa Sul:Palmas": 1784,
+    "Asa Sul:Goiania": 934,
+    "Asa Sul:Riacho Fundo 2": 694
   },
   {
-    "Curitiba:Sao Paulo": 408,
-    "Curitiba:Campo Grande": 991,
-    "Curitiba:Florianopolis": 300
+    "Gama:Sao Paulo": 408,
+    "Gama:Riacho Fundo 2": 991,
+    "Gama:Ceilandia": 300
   },
   {
-    "Florianopolis:Curitiba": 300,
-    "Florianopolis:Porto Alegre": 476
+    "Ceilandia:Gama": 300,
+    "Ceilandia:Porto Alegre": 476
   },
   {
-    "Fortaleza:Teresina": 634,
-    "Fortaleza:Recife": 800,
-    "Fortaleza:Joao Pessoa": 688,
-    "Fortaleza:Natal": 537
+    "Asa Norte:Teresina": 634,
+    "Asa Norte:Recife": 800,
+    "Asa Norte:Joao Pessoa": 688,
+    "Asa Norte:Natal": 537
   },
   {
-    "Goiania:Belo Horizonte": 906,
+    "Goiania:Guara": 906,
     "Goiania:Brasilia": 209,
-    "Goiania:Campo Grande": 935,
-    "Goiania:Cuiaba": 934,
+    "Goiania:Riacho Fundo 2": 935,
+    "Goiania:Asa Sul": 934,
     "Goiania:Palmas": 874,
     "Goiania:Salvador": 1643
   },
@@ -75,38 +75,38 @@ export const rotasWH: any = [
     "Joao Pessoa:Recife": 120
   },
   {
-    "Maceio:Aracaju": 294,
+    "Maceio:Recanto das Emas": 294,
     "Maceio:Recife": 256,
     "Maceio:Salvador": 580
   },
   {
-    "Manaus:Belem": 5298,
-    "Manaus:Boa Vista": 785,
-    "Manaus:Cuiaba": 2357,
+    "Manaus:Taguatinga": 5298,
+    "Manaus:Riacho Fundo 1": 785,
+    "Manaus:Asa Sul": 2357,
     "Manaus:Porto Velho": 888,
     "Manaus:Rio Branco": 1400
   },
   {
-    "Natal:Fortaleza": 537,
+    "Natal:Asa Norte": 537,
     "Natal:Joao Pessoa": 185
   },
   {
-    "Palmas:Belem": 1283,
-    "Palmas:Cuiaba": 1784,
+    "Palmas:Taguatinga": 1283,
+    "Palmas:Asa Sul": 1784,
     "Palmas:Goiania": 874,
     "Palmas:Salvador": 1500,
     "Palmas:Teresina": 1110,
     "Palmas:Sao Luis": 1250
   },
   {
-    "Porto Alegre:Florianopolis": 476
+    "Porto Alegre:Ceilandia": 476
   },
   {
     "Porto Velho:Manaus": 901,
-    "Porto Velho:Cuiaba": 1456
+    "Porto Velho:Asa Sul": 1456
   },
   {
-    "Recife:Fortaleza": 800,
+    "Recife:Asa Norte": 800,
     "Recife:Teresina": 1137,
     "Recife:Salvador": 839,
     "Recife:Maceio": 285,
@@ -119,31 +119,31 @@ export const rotasWH: any = [
   {
     "Rio de Janeiro:Vitoria": 521,
     "Rio de Janeiro:Sao Paulo": 429,
-    "Rio de Janeiro:Belo Horizonte": 434
+    "Rio de Janeiro:Guara": 434
   },
   {
-    "Salvador:Belo Horizonte": 1372,
+    "Salvador:Guara": 1372,
     "Salvador:Goiania": 1643,
     "Salvador:Palmas": 1454,
     "Salvador:Teresina": 1163,
     "Salvador:Vitoria": 1202,
-    "Salvador:Aracaju": 356,
+    "Salvador:Recanto das Emas": 356,
     "Salvador:Maceio": 632,
     "Salvador:Recife": 839
   },
   {
-    "Sao Luis:Belem": 806,
+    "Sao Luis:Taguatinga": 806,
     "Sao Luis:Teresina": 446,
     "Sao Luis:Palmas": 1386
   },
   {
-    "Sao Paulo:Belo Horizonte": 586,
-    "Sao Paulo:Campo Grande": 1014,
-    "Sao Paulo:Curitiba": 408,
+    "Sao Paulo:Guara": 586,
+    "Sao Paulo:Riacho Fundo 2": 1014,
+    "Sao Paulo:Gama": 408,
     "Sao Paulo:Rio de Janeiro": 429
   },
   {
-    "Teresina:Fortaleza": 634,
+    "Teresina:Asa Norte": 634,
     "Teresina:Palmas": 1401,
     "Teresina:Recife": 1137,
     "Teresina:Salvador": 1163,
@@ -152,6 +152,6 @@ export const rotasWH: any = [
   {
     "Vitoria:Rio de Janeiro": 521,
     "Vitoria:Salvador": 1202,
-    "Vitoria:Belo Horizonte": 524
+    "Vitoria:Guara": 524
   }
 ]

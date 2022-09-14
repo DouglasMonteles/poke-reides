@@ -1,6 +1,8 @@
 import CytoscapeComponent from 'react-cytoscapejs';
-import './styles.css';
 
+import ginasioImg from '../../assets/ginasio.jpg';
+
+import './styles.css';
 
 interface GraphVisualizatorProps {
   title: string;
@@ -14,11 +16,11 @@ export function GraphVisualizator({ title, graphData, layoutName, setNodeSelecte
   return (
     <>
       <div id="menu"> 
-        <h1>{ title }</h1>
         <div
           style={{
             border: "1px solid #000",
             backgroundColor: "#f5f6fe",
+            borderRadius: "12px",
           }}
         >
           <CytoscapeComponent
@@ -41,12 +43,14 @@ export function GraphVisualizator({ title, graphData, layoutName, setNodeSelecte
                   "width": "40px",
                   "height": "40px",
                   "background-color": "blue",
-                  "background-image": "url(" + item.data?.image + ")",
+                  "background-image": "url(" + ginasioImg + ")",
                   "background-fit": "contain",
                 });
 
+                cy.elements(`label#${item.data.id}`);
+
                 cy.elements(`node#${item.data.id}`).addListener('click', () => {
-                  console.log(item.data)
+                  //console.log(item.data)
                   setNodeSelected(item.data.label);
                 });
               });

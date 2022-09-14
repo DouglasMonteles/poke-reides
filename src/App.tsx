@@ -6,15 +6,18 @@ import { rotasWH } from "./data/rotasWH";
 import { Graph } from "./services/graph";
 import { IntervalScheduling } from "./services/IntervalScheduling";
 
+import backImg from './assets/poke.jpg';
+import { url } from "inspector";
+
 function App() {
   const grafo = new Graph(rotasWH);
   const [locais, setLocais] = useState<any>([]);
-  const [localIncial, setLocalInicial] = useState('');
-  const [localFinal, setLocalFinal] = useState('');
+  const [localInicial, setLocalInicial] = useState<string | null>(null);
+  const [localFinal, setLocalFinal] = useState<string | null>(null);
   const [render, setRender] = useState<any>();
   const [graphData, setGraphData] = useState<any>();
   const [layoutName, setLayoutName] = useState<any>('breadthfirst');
-  const [nodeSelected, setNodeSelected] = useState<any>('breadthfirst');
+  const [nodeSelected, updateNodeSelected] = useState<any>();
 
   useEffect(() => {
     const listaDeLocais = passeios
@@ -29,9 +32,7 @@ function App() {
     const listaDeLocais = passeios
       .map((it: any) => Object.keys(it)[0]) as Array<string>;
 
-    listaDeLocais.forEach(loc => data.push(setNode(loc.replaceAll(" ", ""), loc.replaceAll(" ", ""))));
-
-    console.log(rotas.map((it: any) => Object.keys(it)));
+    listaDeLocais.forEach(loc => data.push(setNode(loc.replaceAll(" ", ""), loc)));
 
     // const listaDeRotas = rotas
     //   .map((it: any) => Object.keys(it)[0]) as Array<string>;
@@ -39,12 +40,9 @@ function App() {
     const listaDeRotas = [] as any;
 
     rotas.map((it: any) => listaDeRotas.push(...Object.keys(it)));
-
-    console.log(rotas)
     
     listaDeRotas.forEach((rota: string, index: number) => {
       const [primeiro, segundo] = rota.split(':');
-      console.log(`${primeiro} - ${segundo}`)
       
       data.push(setEdge(primeiro.replaceAll(" ", ""), segundo.replaceAll(" ", "")));
     });
@@ -53,22 +51,9 @@ function App() {
     setLayoutName('concentric');
   }, []);
 
-  useEffect(() => {
-    if (localIncial == '') {
-      setLocalInicial(nodeSelected);
-      return;
-    }
-
-    if (localFinal == '') {
-      setLocalInicial(nodeSelected);
-      return;
-    }
-  }, [nodeSelected]);
-
   function calcularRota(e: any) {
     e.preventDefault();
-    console.log(localFinal)
-    // let localIncial = 'Belem';
+    // let localInicial = 'Belem';
     // let localFinal = 'Campo Grande';
     let passeioCadaCidade = null; // 'on'
     let horaPartida = parseFloat('12:00'.replace(":", ""));
@@ -77,13 +62,13 @@ function App() {
     
     if (passeioCadaCidade != null) {
       destinos = grafo
-        .menorCaminho(localIncial, localFinal, true)
-        .concat([localIncial])
+        .menorCaminho(localInicial, localFinal, true)
+        .concat([localInicial])
         .reverse();
     } else {
       destinos = grafo
-        .menorCaminho(localIncial, localFinal, false)
-        .concat([localIncial])
+        .menorCaminho(localInicial, localFinal, false)
+        .concat([localInicial])
         .reverse();
     }
 
@@ -111,7 +96,6 @@ function App() {
     let destinoEjs = [];
 
     while (destinos.length > l) {
-      console.log(l);
       var ultimaCidade = destinos[destinos.length - 1];
       var cidadeAtual = destinos[l];
       //  if (passeioCadaCidade != 'on') {cidadeAtual=ultimaCidade}
@@ -120,7 +104,6 @@ function App() {
         var obj = passeios[i];
         for (var cidade in obj) {
           var value = obj[cidade];
-          console.log(destinos);
           if (cidade == cidadeAtual) {
             for (var passeio in value) {
               var value2 = value[passeio];
@@ -185,7 +168,6 @@ function App() {
                 ]);
               }
               destinoEjs.push(destinos[l]);
-              console.log(destinoEjs);
             }
           }
         }
@@ -194,15 +176,12 @@ function App() {
       x++;
     }
 
-    console.log(localFinal);
-
     const render =  {
       result: resultado,
       destinos: destinoEjs,
       destinosTotal: destinos,
     };
 
-    console.log(render);
     setRender(render);
   };
 
@@ -230,119 +209,104 @@ function App() {
     return edge;
   }
 
+  function getNodeSelected(node: any): void {
+    setLocalInicial((nodeAnt: any) => {
+      if (nodeAnt) {
+        setLocalFinal(node);
+        return nodeAnt;
+      } else {
+        return node;
+      }
+    });
+  }
+
   return (
-    <div className="">
-      <div>
-        <form>
-          <div className="">
-            <label>Local inicial</label>
-            <select
-              onChange={(e) => setLocalInicial(e.target.value)}
-            >
-              <option>Capital Inicial</option>
-              {
-                locais.map((it: string) => (
-                  <option 
-                    key={it} 
-                    value={it}
-                  >
-                    {it}
-                  </option>
-                ))
-              }
-            </select>
-          </div>
-
-          <div className="">
-            <label>Local final</label>
-            <select
-              onChange={(e) => setLocalFinal(e.target.value)}
-            >
-              <option>Capital localFinal</option>
-              {
-                locais.map((it: string) => (
-                  <option 
-                    key={it} 
-                    value={it}
-                  >
-                    {it}
-                  </option>
-                ))
-              }
-            </select>
-          </div>
-
-          <div className="">
-            <label>Informe o horários que começará as reides</label>
-            <input
-              min="09:00"
-              max="20:00"
-              required
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="btn btn-primary btn-sm float-end"
-            onClick={calcularRota}
-          >
-            Pesquisar por locais
-          </button>
-        </form>
-
+    <div className="w-full container mx-auto">
+      {(!render && !render?.destinosTotal && !render?.result) ? (
         <div>
-          {
-            render?.destinosTotal?.map((dest: string, index: number) => (
-              <span key={index}>
-                {dest} {(index < render.destinosTotal.length-1) && ' -> '}
-              </span>
-            ))
-          }
+        <div className="rounded-md ">
+          <h1 className="text-center font-bold text-2xl my-4 mb-8">
+            Grafo de conexões entre os ginásios
+          </h1>
+
+          <div className="hint text-gray-600">
+            Clique em dois pontos que deseja saber dos 
+            ginásios com reides ativas
+          </div>
+
+          <GraphVisualizator 
+            title="Grafo de conexões entre os ginásios"
+            layoutName={layoutName}
+            graphData={graphData}
+            setNodeSelected={getNodeSelected}
+          />
         </div>
-
+      
         <div>
-          {
-            render?.result.map((it: any, index: number) => (
-              (index === 0) ? (
-                <div key={index}>
-                  Local: {it[0]}
-                </div>
-              ) : (
-                <div key={index}>
-                  Reide/Ginásio: {it[1]}
-                </div>
-              )
-            ))
-          }
-          
+          <form className="">
+            <div className={"flex flex border-2 p-2 gap-4 mt-4 rounded-md "}>
+              <label>Você selecionou os locais</label>  
+              <p>
+                De: &nbsp; <span className="bg-blue-200 rounded-md p-2">
+                  {localInicial}
+                  </span>&nbsp;&nbsp;&nbsp;
+                Para: &nbsp; <span className="bg-blue-400 rounded-md p-2">
+                  {((localInicial !== localFinal) && localFinal)}
+                  </span>
+              </p>
+            </div>
 
-          {/* 
-            <% for(var j=0; j<destinosTotal.length; j++) { %>
-              <%= destinosTotal[j] %>
-            <% } %>
-            
-            <% for(var j=0; j<destinos.length; j++) { %>
-              <li>
-                  <%= destinos[j] %>
-              </li>
-            
-              <% for(var i=1; i<result.length; i++) { %>
-                <% if(result[i][0] == destinos[j]) { %>
-                  <ul>
-                      <%= result[i][1] %>
-                  </ul>
-                <% } %>
-              <% } %>
-            <% } %> */} 
+            <div className="flex flex border-2 p-2 gap-4 mt-4 rounded-md">
+              <label>Informe o horário em que começará as reides:</label>
+              <input
+                type="time"
+                min="09:00"
+                max="20:00"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-blue-600 rounded-md text-white my-4 px-4 py-2 mb-12 active:bg-blue-800"
+              onClick={calcularRota}
+            >
+              Pesquisar por locais
+            </button>
+          </form>
         </div>
       </div>
+      ) : (
+        <div className="flex border-2 rounded-md shadow-md items-center 
+          justify-center p-4 mt-4 mx-8">
+          <div className="flex flex-col justify-center items-center gap-4 flex-wrap">
+            <p>Você passará por:</p>
+            {
+              render?.destinosTotal?.map((dest: string, index: number) => (
+                <span className="bg-gray-600 rounded-md p-2 text-white" key={index}>
+                  {dest} {(index < render.destinosTotal.length-1)}
+                </span>
+              ))
+            }
+          </div>
 
-      <GraphVisualizator 
-        title="Teste"
-        layoutName={layoutName}
-        graphData={graphData}
-        setNodeSelected={setNodeSelected}
-      />
+          <div className="flex flex-col items-center justify-center gap-4">
+            {
+              render?.result.map((it: any, index: number) => (
+                (index === 0) ? (
+                  <div key={index}>
+                    <strong>Se liga nas reides que estão acontecendo agora!</strong>
+                  </div>
+                ) : (
+                  <div key={index}>
+                    Reide no Ginásio: <span className="text-gray-600">{it[1]}</span>
+                  </div>
+                )
+              ))
+            }
+          </div>
+        </div>
+      )}
     </div>
   );
 }

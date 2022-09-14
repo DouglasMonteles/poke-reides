@@ -1,92 +1,92 @@
 export const rotas: any = [
   {
-    "Aracaju:Maceio": {
+    "Recanto das Emas:Maceio": {
       "distancia": 294,
       "tempo": 3.675
     },
-    "Aracaju:Salvador": {
+    "Recanto das Emas:Salvador": {
       "distancia": 356,
       "tempo": 4.45
     },
-    "Aracaju:Palmas": {
+    "Recanto das Emas:Palmas": {
       "distancia": 456,
       "tempo": 5.45
     }
   },
   {
-    "Belem:Sao Luis": {
+    "Taguatinga:Sao Luis": {
       "distancia": 806,
       "tempo": 10.075
     },
-    "Belem:Palmas": {
+    "Taguatinga:Palmas": {
       "distancia": 1283,
       "tempo": 16.0375
     },
-    "Belem:Cuiaba": {
+    "Taguatinga:Asa Sul": {
       "distancia": 2941,
       "tempo": 36.7625
     },
-    "Belem:Manaus": {
+    "Taguatinga:Manaus": {
       "distancia": 5298,
       "tempo": 66.225
     },
-    "Belem:Macapa": {
+    "Taguatinga:Macapa": {
       "distancia": 2173,
       "tempo": 27.1625
     },
-    "Belem:Boa Vista": {
+    "Taguatinga:Riacho Fundo 1": {
       "distancia": 6083,
       "tempo": 76.0375
     }
   },
   {
-    "Macapa:Belem": {
+    "Macapa:Taguatinga": {
       "distancia": 2173,
       "tempo": 27.1625
     }
   },
   {
-    "Belo Horizonte:Rio de Janeiro": {
+    "Guara:Rio de Janeiro": {
       "distancia": 434,
       "tempo": 5.425
     },
-    "Belo Horizonte:Vitoria": {
+    "Guara:Vitoria": {
       "distancia": 524,
       "tempo": 6.55
     },
-    "Belo Horizonte:Sao Paulo": {
+    "Guara:Sao Paulo": {
       "distancia": 586,
       "tempo": 7.325
     },
-    "Belo Horizonte:Campo Grande": {
+    "Guara:Riacho Fundo 2": {
       "distancia": 1453,
       "tempo": 18.1625
     },
-    "Belo Horizonte:Goiania": {
+    "Guara:Goiania": {
       "distancia": 906,
       "tempo": 11.325
     },
-    "Belo Horizonte:Brasilia": {
+    "Guara:Brasilia": {
       "distancia": 716,
       "tempo": 8.95
     },
-    "Belo Horizonte:Salvador": {
+    "Guara:Salvador": {
       "distancia": 1372,
       "tempo": 17.15
     }
   },
   {
-    "Boa Vista:Manaus": {
+    "Riacho Fundo 1:Manaus": {
       "distancia": 785,
       "tempo": 9.8125
     },
-    "Boa Vista:Belem": {
+    "Riacho Fundo 1:Taguatinga": {
       "distancia": 6083,
       "tempo": 76.0375
     }
   },
   {
-    "Brasilia:Belo Horizonte": {
+    "Brasilia:Guara": {
       "distancia": 716,
       "tempo": 8.95
     },
@@ -96,97 +96,97 @@ export const rotas: any = [
     }
   },
   {
-    "Campo Grande:Cuiaba": {
+    "Riacho Fundo 2:Asa Sul": {
       "distancia": 694,
       "tempo": 8.675
     },
-    "Campo Grande:Goiania": {
+    "Riacho Fundo 2:Goiania": {
       "distancia": 934,
       "tempo": 11.675
     },
-    "Campo Grande:Belo Horizonte": {
+    "Riacho Fundo 2:Guara": {
       "distancia": 1453,
       "tempo": 18.1625
     },
-    "Campo Grande:Sao Paulo": {
+    "Riacho Fundo 2:Sao Paulo": {
       "distancia": 1014,
       "tempo": 12.675
     },
-    "Campo Grande:Curitiba": {
+    "Riacho Fundo 2:Gama": {
       "distancia": 991,
       "tempo": 12.3875
     }
   },
   {
-    "Cuiaba:Porto Velho": {
+    "Asa Sul:Porto Velho": {
       "distancia": 1456,
       "tempo": 18.2
     },
-    "Cuiaba:Manaus": {
+    "Asa Sul:Manaus": {
       "distancia": 2357,
       "tempo": 29.4625
     },
-    "Cuiaba:Belem": {
+    "Asa Sul:Taguatinga": {
       "distancia": 2941,
       "tempo": 36.7625
     },
-    "Cuiaba:Palmas": {
+    "Asa Sul:Palmas": {
       "distancia": 1784,
       "tempo": 22.3
     },
-    "Cuiaba:Goiania": {
+    "Asa Sul:Goiania": {
       "distancia": 934,
       "tempo": 11.675
     },
-    "Cuiaba:Campo Grande": {
+    "Asa Sul:Riacho Fundo 2": {
       "distancia": 694,
       "tempo": 8.675
     }
   },
   {
-    "Curitiba:Sao Paulo": {
+    "Gama:Sao Paulo": {
       "distancia": 408,
       "tempo": 5.1
     },
-    "Curitiba:Campo Grande": {
+    "Gama:Riacho Fundo 2": {
       "distancia": 991,
       "tempo": 12.3875
     },
-    "Curitiba:Florianopolis": {
+    "Gama:Ceilandia": {
       "distancia": 300,
       "tempo": 3.75
     }
   },
   {
-    "Florianopolis:Curitiba": {
+    "Ceilandia:Gama": {
       "distancia": 300,
       "tempo": 3.75
     },
-    "Florianopolis:Porto Alegre": {
+    "Ceilandia:Porto Alegre": {
       "distancia": 476,
       "tempo": 5.95
     }
   },
   {
-    "Fortaleza:Teresina": {
+    "Asa Norte:Teresina": {
       "distancia": 634,
       "tempo": 7.925
     },
-    "Fortaleza:Recife": {
+    "Asa Norte:Recife": {
       "distancia": 800,
       "tempo": 10
     },
-    "Fortaleza:Joao Pessoa": {
+    "Asa Norte:Joao Pessoa": {
       "distancia": 688,
       "tempo": 8.6
     },
-    "Fortaleza:Natal": {
+    "Asa Norte:Natal": {
       "distancia": 537,
       "tempo": 6.7125
     }
   },
   {
-    "Goiania:Belo Horizonte": {
+    "Goiania:Guara": {
       "distancia": 906,
       "tempo": 11.325
     },
@@ -194,11 +194,11 @@ export const rotas: any = [
       "distancia": 209,
       "tempo": 2.6125
     },
-    "Goiania:Campo Grande": {
+    "Goiania:Riacho Fundo 2": {
       "distancia": 935,
       "tempo": 11.6875
     },
-    "Goiania:Cuiaba": {
+    "Goiania:Asa Sul": {
       "distancia": 934,
       "tempo": 11.675
     },
@@ -226,7 +226,7 @@ export const rotas: any = [
     }
   },
   {
-    "Maceio:Aracaju": {
+    "Maceio:Recanto das Emas": {
       "distancia": 294,
       "tempo": 3.675
     },
@@ -240,15 +240,15 @@ export const rotas: any = [
     }
   },
   {
-    "Manaus:Belem": {
+    "Manaus:Taguatinga": {
       "distancia": 5298,
       "tempo": 66.225
     },
-    "Manaus:Boa Vista": {
+    "Manaus:Riacho Fundo 1": {
       "distancia": 785,
       "tempo": 9.8125
     },
-    "Manaus:Cuiaba": {
+    "Manaus:Asa Sul": {
       "distancia": 2357,
       "tempo": 29.4625
     },
@@ -262,7 +262,7 @@ export const rotas: any = [
     }
   },
   {
-    "Natal:Fortaleza": {
+    "Natal:Asa Norte": {
       "distancia": 537,
       "tempo": 6.7125
     },
@@ -272,11 +272,11 @@ export const rotas: any = [
     }
   },
   {
-    "Palmas:Belem": {
+    "Palmas:Taguatinga": {
       "distancia": 1283,
       "tempo": 16.0375
     },
-    "Palmas:Cuiaba": {
+    "Palmas:Asa Sul": {
       "distancia": 1784,
       "tempo": 22.3
     },
@@ -298,7 +298,7 @@ export const rotas: any = [
     }
   },
   {
-    "Porto Alegre:Florianopolis": {
+    "Porto Alegre:Ceilandia": {
       "distancia": 476,
       "tempo": 5.95
     }
@@ -308,13 +308,13 @@ export const rotas: any = [
       "distancia": 901,
       "tempo": 11.2625
     },
-    "Porto Velho:Cuiaba": {
+    "Porto Velho:Asa Sul": {
       "distancia": 1456,
       "tempo": 18.2
     }
   },
   {
-    "Recife:Fortaleza": {
+    "Recife:Asa Norte": {
       "distancia": 800,
       "tempo": 10
     },
@@ -354,13 +354,13 @@ export const rotas: any = [
       "distancia": 429,
       "tempo": 5.3625
     },
-    "Rio de Janeiro:Belo Horizonte": {
+    "Rio de Janeiro:Guara": {
       "distancia": 1445,
       "tempo": 5.425
     }
   },
   {
-    "Salvador:Belo Horizonte": {
+    "Salvador:Guara": {
       "distancia": 1372,
       "tempo": 17.15
     },
@@ -380,7 +380,7 @@ export const rotas: any = [
       "distancia": 1202,
       "tempo": 15.025
     },
-    "Aracaju:Salvador": {
+    "Recanto das Emas:Salvador": {
       "distancia": 356,
       "tempo": 4.45
     },
@@ -394,7 +394,7 @@ export const rotas: any = [
     }
   },
   {
-    "Sao Luis:Belem": {
+    "Sao Luis:Taguatinga": {
       "distancia": 806,
       "tempo": 10.075
     },
@@ -408,15 +408,15 @@ export const rotas: any = [
     }
   },
   {
-    "Sao Paulo:Belo Horizonte": {
+    "Sao Paulo:Guara": {
       "distancia": 586,
       "tempo": 7.325
     },
-    "Sao Paulo:Campo Grande": {
+    "Sao Paulo:Riacho Fundo 2": {
       "distancia": 1014,
       "tempo": 12.675
     },
-    "Sao Paulo:Curitiba": {
+    "Sao Paulo:Gama": {
       "distancia": 408,
       "tempo": 5.1
     },
@@ -426,7 +426,7 @@ export const rotas: any = [
     }
   },
   {
-    "Teresina:Fortaleza": {
+    "Teresina:Asa Norte": {
       "distancia": 634,
       "tempo": 7.925
     },
@@ -456,7 +456,7 @@ export const rotas: any = [
       "distancia": 1202,
       "tempo": 15.025
     },
-    "Vitoria:Belo Horizonte": {
+    "Vitoria:Guara": {
       "distancia": 524,
       "tempo": 6.55
     }
