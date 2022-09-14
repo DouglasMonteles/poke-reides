@@ -1,157 +1,157 @@
 export const rotasWH: any = [
   {
-    "Recanto das Emas:Maceio": 294,
-    "Recanto das Emas:Salvador": 356
+    "Recanto das Emas:Jardim Botanico": 294,
+    "Recanto das Emas:Sobradinho II": 356
   },
   {
-    "Taguatinga:Sao Luis": 806,
-    "Taguatinga:Palmas": 1283,
+    "Taguatinga:Santa Maria": 806,
+    "Taguatinga:Nucleo Bandeirante": 1283,
     "Taguatinga:Asa Sul": 2941,
-    "Taguatinga:Manaus": 5298,
-    "Taguatinga:Macapa": 2173,
+    "Taguatinga:Arniqueira": 5298,
+    "Taguatinga:Paranoa": 2173,
     "Taguatinga:Riacho Fundo 1": 6083
   },
   {
-    "Macapa:Taguatinga": 2173
+    "Paranoa:Taguatinga": 2173
   },
   {
-    "Guara:Rio de Janeiro": 434,
-    "Guara:Vitoria": 524,
-    "Guara:Sao Paulo": 586,
+    "Guara:Varjão": 434,
+    "Guara:Samambaia": 524,
+    "Guara:Plano Piloto": 586,
     "Guara:Riacho Fundo 2": 1453,
-    "Guara:Goiania": 906,
+    "Guara:Sobradinho": 906,
     "Guara:Brasilia": 716,
-    "Guara:Salvador": 1372
+    "Guara:Sobradinho II": 1372
   },
   {
-    "Riacho Fundo 1:Manaus": 785,
+    "Riacho Fundo 1:Arniqueira": 785,
     "Riacho Fundo 1:Taguatinga": 6083
   },
   {
     "Brasilia:Guara": 716,
-    "Brasilia:Goiania": 209
+    "Brasilia:Sobradinho": 209
   },
   {
     "Riacho Fundo 2:Asa Sul": 694,
-    "Riacho Fundo 2:Goiania": 934,
+    "Riacho Fundo 2:Sobradinho": 934,
     "Riacho Fundo 2:Guara": 1453,
-    "Riacho Fundo 2:Sao Paulo": 1014,
+    "Riacho Fundo 2:Plano Piloto": 1014,
     "Riacho Fundo 2:Gama": 991
   },
   {
-    "Asa Sul:Porto Velho": 1456,
-    "Asa Sul:Manaus": 2357,
+    "Asa Sul:Candangolandia": 1456,
+    "Asa Sul:Arniqueira": 2357,
     "Asa Sul:Taguatinga": 2941,
-    "Asa Sul:Palmas": 1784,
-    "Asa Sul:Goiania": 934,
+    "Asa Sul:Nucleo Bandeirante": 1784,
+    "Asa Sul:Sobradinho": 934,
     "Asa Sul:Riacho Fundo 2": 694
   },
   {
-    "Gama:Sao Paulo": 408,
+    "Gama:Plano Piloto": 408,
     "Gama:Riacho Fundo 2": 991,
     "Gama:Ceilandia": 300
   },
   {
     "Ceilandia:Gama": 300,
-    "Ceilandia:Porto Alegre": 476
+    "Ceilandia:Park Way": 476
   },
   {
-    "Asa Norte:Teresina": 634,
-    "Asa Norte:Recife": 800,
-    "Asa Norte:Joao Pessoa": 688,
-    "Asa Norte:Natal": 537
+    "Asa Norte:Aguas Claras": 634,
+    "Asa Norte:Fercal": 800,
+    "Asa Norte:Vicente Pires": 688,
+    "Asa Norte:SCIA": 537
   },
   {
-    "Goiania:Guara": 906,
-    "Goiania:Brasilia": 209,
-    "Goiania:Riacho Fundo 2": 935,
-    "Goiania:Asa Sul": 934,
-    "Goiania:Palmas": 874,
-    "Goiania:Salvador": 1643
+    "Sobradinho:Guara": 906,
+    "Sobradinho:Brasilia": 209,
+    "Sobradinho:Riacho Fundo 2": 935,
+    "Sobradinho:Asa Sul": 934,
+    "Sobradinho:Nucleo Bandeirante": 874,
+    "Sobradinho:Sobradinho II": 1643
   },
   {
-    "Joao Pessoa:Natal": 185,
-    "Joao Pessoa:Teresina": 1224,
-    "Joao Pessoa:Recife": 120
+    "Vicente Pires:SCIA": 185,
+    "Vicente Pires:Aguas Claras": 1224,
+    "Vicente Pires:Fercal": 120
   },
   {
-    "Maceio:Recanto das Emas": 294,
-    "Maceio:Recife": 256,
-    "Maceio:Salvador": 580
+    "Jardim Botanico:Recanto das Emas": 294,
+    "Jardim Botanico:Fercal": 256,
+    "Jardim Botanico:Sobradinho II": 580
   },
   {
-    "Manaus:Taguatinga": 5298,
-    "Manaus:Riacho Fundo 1": 785,
-    "Manaus:Asa Sul": 2357,
-    "Manaus:Porto Velho": 888,
-    "Manaus:Rio Branco": 1400
+    "Arniqueira:Taguatinga": 5298,
+    "Arniqueira:Riacho Fundo 1": 785,
+    "Arniqueira:Asa Sul": 2357,
+    "Arniqueira:Candangolandia": 888,
+    "Arniqueira:SIA": 1400
   },
   {
-    "Natal:Asa Norte": 537,
-    "Natal:Joao Pessoa": 185
+    "SCIA:Asa Norte": 537,
+    "SCIA:Vicente Pires": 185
   },
   {
-    "Palmas:Taguatinga": 1283,
-    "Palmas:Asa Sul": 1784,
-    "Palmas:Goiania": 874,
-    "Palmas:Salvador": 1500,
-    "Palmas:Teresina": 1110,
-    "Palmas:Sao Luis": 1250
+    "Nucleo Bandeirante:Taguatinga": 1283,
+    "Nucleo Bandeirante:Asa Sul": 1784,
+    "Nucleo Bandeirante:Sobradinho": 874,
+    "Nucleo Bandeirante:Sobradinho II": 1500,
+    "Nucleo Bandeirante:Aguas Claras": 1110,
+    "Nucleo Bandeirante:Santa Maria": 1250
   },
   {
-    "Porto Alegre:Ceilandia": 476
+    "Park Way:Ceilandia": 476
   },
   {
-    "Porto Velho:Manaus": 901,
-    "Porto Velho:Asa Sul": 1456
+    "Candangolandia:Arniqueira": 901,
+    "Candangolandia:Asa Sul": 1456
   },
   {
-    "Recife:Asa Norte": 800,
-    "Recife:Teresina": 1137,
-    "Recife:Salvador": 839,
-    "Recife:Maceio": 285,
-    "Recife:Joao Pessoa": 120
+    "Fercal:Asa Norte": 800,
+    "Fercal:Aguas Claras": 1137,
+    "Fercal:Sobradinho II": 839,
+    "Fercal:Jardim Botanico": 285,
+    "Fercal:Vicente Pires": 120
   },
   {
-    "Rio Branco:Porto Velho": 544,
-    "Rio Branco:Manaus": 1445
+    "SIA:Candangolandia": 544,
+    "SIA:Arniqueira": 1445
   },
   {
-    "Rio de Janeiro:Vitoria": 521,
-    "Rio de Janeiro:Sao Paulo": 429,
-    "Rio de Janeiro:Guara": 434
+    "Varjão:Samambaia": 521,
+    "Varjão:Plano Piloto": 429,
+    "Varjão:Guara": 434
   },
   {
-    "Salvador:Guara": 1372,
-    "Salvador:Goiania": 1643,
-    "Salvador:Palmas": 1454,
-    "Salvador:Teresina": 1163,
-    "Salvador:Vitoria": 1202,
-    "Salvador:Recanto das Emas": 356,
-    "Salvador:Maceio": 632,
-    "Salvador:Recife": 839
+    "Sobradinho II:Guara": 1372,
+    "Sobradinho II:Sobradinho": 1643,
+    "Sobradinho II:Nucleo Bandeirante": 1454,
+    "Sobradinho II:Aguas Claras": 1163,
+    "Sobradinho II:Samambaia": 1202,
+    "Sobradinho II:Recanto das Emas": 356,
+    "Sobradinho II:Jardim Botanico": 632,
+    "Sobradinho II:Fercal": 839
   },
   {
-    "Sao Luis:Taguatinga": 806,
-    "Sao Luis:Teresina": 446,
-    "Sao Luis:Palmas": 1386
+    "Santa Maria:Taguatinga": 806,
+    "Santa Maria:Aguas Claras": 446,
+    "Santa Maria:Nucleo Bandeirante": 1386
   },
   {
-    "Sao Paulo:Guara": 586,
-    "Sao Paulo:Riacho Fundo 2": 1014,
-    "Sao Paulo:Gama": 408,
-    "Sao Paulo:Rio de Janeiro": 429
+    "Plano Piloto:Guara": 586,
+    "Plano Piloto:Riacho Fundo 2": 1014,
+    "Plano Piloto:Gama": 408,
+    "Plano Piloto:Varjão": 429
   },
   {
-    "Teresina:Asa Norte": 634,
-    "Teresina:Palmas": 1401,
-    "Teresina:Recife": 1137,
-    "Teresina:Salvador": 1163,
-    "Teresina:Sao Luis": 446
+    "Aguas Claras:Asa Norte": 634,
+    "Aguas Claras:Nucleo Bandeirante": 1401,
+    "Aguas Claras:Fercal": 1137,
+    "Aguas Claras:Sobradinho II": 1163,
+    "Aguas Claras:Santa Maria": 446
   },
   {
-    "Vitoria:Rio de Janeiro": 521,
-    "Vitoria:Salvador": 1202,
-    "Vitoria:Guara": 524
+    "Samambaia:Varjão": 521,
+    "Samambaia:Sobradinho II": 1202,
+    "Samambaia:Guara": 524
   }
 ]

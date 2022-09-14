@@ -1,24 +1,24 @@
 export const rotas: any = [
   {
-    "Recanto das Emas:Maceio": {
+    "Recanto das Emas:Jardim Botanico": {
       "distancia": 294,
       "tempo": 3.675
     },
-    "Recanto das Emas:Salvador": {
+    "Recanto das Emas:Sobradinho II": {
       "distancia": 356,
       "tempo": 4.45
     },
-    "Recanto das Emas:Palmas": {
+    "Recanto das Emas:Nucleo Bandeirante": {
       "distancia": 456,
       "tempo": 5.45
     }
   },
   {
-    "Taguatinga:Sao Luis": {
+    "Taguatinga:Santa Maria": {
       "distancia": 806,
       "tempo": 10.075
     },
-    "Taguatinga:Palmas": {
+    "Taguatinga:Nucleo Bandeirante": {
       "distancia": 1283,
       "tempo": 16.0375
     },
@@ -26,11 +26,11 @@ export const rotas: any = [
       "distancia": 2941,
       "tempo": 36.7625
     },
-    "Taguatinga:Manaus": {
+    "Taguatinga:Arniqueira": {
       "distancia": 5298,
       "tempo": 66.225
     },
-    "Taguatinga:Macapa": {
+    "Taguatinga:Paranoa": {
       "distancia": 2173,
       "tempo": 27.1625
     },
@@ -40,21 +40,21 @@ export const rotas: any = [
     }
   },
   {
-    "Macapa:Taguatinga": {
+    "Paranoa:Taguatinga": {
       "distancia": 2173,
       "tempo": 27.1625
     }
   },
   {
-    "Guara:Rio de Janeiro": {
+    "Guara:Varjão": {
       "distancia": 434,
       "tempo": 5.425
     },
-    "Guara:Vitoria": {
+    "Guara:Samambaia": {
       "distancia": 524,
       "tempo": 6.55
     },
-    "Guara:Sao Paulo": {
+    "Guara:Plano Piloto": {
       "distancia": 586,
       "tempo": 7.325
     },
@@ -62,7 +62,7 @@ export const rotas: any = [
       "distancia": 1453,
       "tempo": 18.1625
     },
-    "Guara:Goiania": {
+    "Guara:Sobradinho": {
       "distancia": 906,
       "tempo": 11.325
     },
@@ -70,13 +70,13 @@ export const rotas: any = [
       "distancia": 716,
       "tempo": 8.95
     },
-    "Guara:Salvador": {
+    "Guara:Sobradinho II": {
       "distancia": 1372,
       "tempo": 17.15
     }
   },
   {
-    "Riacho Fundo 1:Manaus": {
+    "Riacho Fundo 1:Arniqueira": {
       "distancia": 785,
       "tempo": 9.8125
     },
@@ -90,7 +90,7 @@ export const rotas: any = [
       "distancia": 716,
       "tempo": 8.95
     },
-    "Brasilia:Goiania": {
+    "Brasilia:Sobradinho": {
       "distancia": 209,
       "tempo": 2.6125
     }
@@ -100,7 +100,7 @@ export const rotas: any = [
       "distancia": 694,
       "tempo": 8.675
     },
-    "Riacho Fundo 2:Goiania": {
+    "Riacho Fundo 2:Sobradinho": {
       "distancia": 934,
       "tempo": 11.675
     },
@@ -108,7 +108,7 @@ export const rotas: any = [
       "distancia": 1453,
       "tempo": 18.1625
     },
-    "Riacho Fundo 2:Sao Paulo": {
+    "Riacho Fundo 2:Plano Piloto": {
       "distancia": 1014,
       "tempo": 12.675
     },
@@ -118,11 +118,11 @@ export const rotas: any = [
     }
   },
   {
-    "Asa Sul:Porto Velho": {
+    "Asa Sul:Candangolandia": {
       "distancia": 1456,
       "tempo": 18.2
     },
-    "Asa Sul:Manaus": {
+    "Asa Sul:Arniqueira": {
       "distancia": 2357,
       "tempo": 29.4625
     },
@@ -130,11 +130,11 @@ export const rotas: any = [
       "distancia": 2941,
       "tempo": 36.7625
     },
-    "Asa Sul:Palmas": {
+    "Asa Sul:Nucleo Bandeirante": {
       "distancia": 1784,
       "tempo": 22.3
     },
-    "Asa Sul:Goiania": {
+    "Asa Sul:Sobradinho": {
       "distancia": 934,
       "tempo": 11.675
     },
@@ -144,7 +144,7 @@ export const rotas: any = [
     }
   },
   {
-    "Gama:Sao Paulo": {
+    "Gama:Plano Piloto": {
       "distancia": 408,
       "tempo": 5.1
     },
@@ -162,301 +162,301 @@ export const rotas: any = [
       "distancia": 300,
       "tempo": 3.75
     },
-    "Ceilandia:Porto Alegre": {
+    "Ceilandia:Park Way": {
       "distancia": 476,
       "tempo": 5.95
     }
   },
   {
-    "Asa Norte:Teresina": {
+    "Asa Norte:Aguas Claras": {
       "distancia": 634,
       "tempo": 7.925
     },
-    "Asa Norte:Recife": {
+    "Asa Norte:Fercal": {
       "distancia": 800,
       "tempo": 10
     },
-    "Asa Norte:Joao Pessoa": {
+    "Asa Norte:Vicente Pires": {
       "distancia": 688,
       "tempo": 8.6
     },
-    "Asa Norte:Natal": {
+    "Asa Norte:SCIA": {
       "distancia": 537,
       "tempo": 6.7125
     }
   },
   {
-    "Goiania:Guara": {
+    "Sobradinho:Guara": {
       "distancia": 906,
       "tempo": 11.325
     },
-    "Goiania:Brasilia": {
+    "Sobradinho:Brasilia": {
       "distancia": 209,
       "tempo": 2.6125
     },
-    "Goiania:Riacho Fundo 2": {
+    "Sobradinho:Riacho Fundo 2": {
       "distancia": 935,
       "tempo": 11.6875
     },
-    "Goiania:Asa Sul": {
+    "Sobradinho:Asa Sul": {
       "distancia": 934,
       "tempo": 11.675
     },
-    "Goiania:Palmas": {
+    "Sobradinho:Nucleo Bandeirante": {
       "distancia": 874,
       "tempo": 10.925
     },
-    "Goiania:Salvador": {
+    "Sobradinho:Sobradinho II": {
       "distancia": 1643,
       "tempo": 20.5375
     }
   },
   {
-    "Joao Pessoa:Natal": {
+    "Vicente Pires:SCIA": {
       "distancia": 185,
       "tempo": 2.3125
     },
-    "Joao Pessoa:Teresina": {
+    "Vicente Pires:Aguas Claras": {
       "distancia": 1224,
       "tempo": 15.3
     },
-    "Joao Pessoa:Recife": {
+    "Vicente Pires:Fercal": {
       "distancia": 120,
       "tempo": 1.5
     }
   },
   {
-    "Maceio:Recanto das Emas": {
+    "Jardim Botanico:Recanto das Emas": {
       "distancia": 294,
       "tempo": 3.675
     },
-    "Maceio:Recife": {
+    "Jardim Botanico:Fercal": {
       "distancia": 256,
       "tempo": 3.2
     },
-    "Maceio:Salvador": {
+    "Jardim Botanico:Sobradinho II": {
       "distancia": 120,
       "tempo": 7.25
     }
   },
   {
-    "Manaus:Taguatinga": {
+    "Arniqueira:Taguatinga": {
       "distancia": 5298,
       "tempo": 66.225
     },
-    "Manaus:Riacho Fundo 1": {
+    "Arniqueira:Riacho Fundo 1": {
       "distancia": 785,
       "tempo": 9.8125
     },
-    "Manaus:Asa Sul": {
+    "Arniqueira:Asa Sul": {
       "distancia": 2357,
       "tempo": 29.4625
     },
-    "Manaus:Porto Velho": {
+    "Arniqueira:Candangolandia": {
       "distancia": 888,
       "tempo": 11.1
     },
-    "Manaus:Rio Branco": {
+    "Arniqueira:SIA": {
       "distancia": 1400,
       "tempo": 17.5
     }
   },
   {
-    "Natal:Asa Norte": {
+    "SCIA:Asa Norte": {
       "distancia": 537,
       "tempo": 6.7125
     },
-    "Natal:Joao Pessoa": {
+    "SCIA:Vicente Pires": {
       "distancia": 185,
       "tempo": 2.3125
     }
   },
   {
-    "Palmas:Taguatinga": {
+    "Nucleo Bandeirante:Taguatinga": {
       "distancia": 1283,
       "tempo": 16.0375
     },
-    "Palmas:Asa Sul": {
+    "Nucleo Bandeirante:Asa Sul": {
       "distancia": 1784,
       "tempo": 22.3
     },
-    "Palmas:Goiania": {
+    "Nucleo Bandeirante:Sobradinho": {
       "distancia": 874,
       "tempo": 10.925
     },
-    "Palmas:Salvador": {
+    "Nucleo Bandeirante:Sobradinho II": {
       "distancia": 1500,
       "tempo": 18.75
     },
-    "Palmas:Teresina": {
+    "Nucleo Bandeirante:Aguas Claras": {
       "distancia": 1110,
       "tempo": 2.3125
     },
-    "Palmas:Sao Luis": {
+    "Nucleo Bandeirante:Santa Maria": {
       "distancia": 185,
       "tempo": 13.875
     }
   },
   {
-    "Porto Alegre:Ceilandia": {
+    "Park Way:Ceilandia": {
       "distancia": 476,
       "tempo": 5.95
     }
   },
   {
-    "Porto Velho:Manaus": {
+    "Candangolandia:Arniqueira": {
       "distancia": 901,
       "tempo": 11.2625
     },
-    "Porto Velho:Asa Sul": {
+    "Candangolandia:Asa Sul": {
       "distancia": 1456,
       "tempo": 18.2
     }
   },
   {
-    "Recife:Asa Norte": {
+    "Fercal:Asa Norte": {
       "distancia": 800,
       "tempo": 10
     },
-    "Recife:Teresina": {
+    "Fercal:Aguas Claras": {
       "distancia": 1137,
       "tempo": 14.125
     },
-    "Recife:Salvador": {
+    "Fercal:Sobradinho II": {
       "distancia": 839,
       "tempo": 10.4875
     },
-    "Recife:Maceio": {
+    "Fercal:Jardim Botanico": {
       "distancia": 256,
       "tempo": 3.2
     },
-    "Recife:Joao Pessoa": {
+    "Fercal:Vicente Pires": {
       "distancia": 120,
       "tempo": 1.5
     }
   },
   {
-    "Rio Branco:Porto Velho": {
+    "SIA:Candangolandia": {
       "distancia": 544,
       "tempo": 6.8
     },
-    "Rio Branco:Manaus": {
+    "SIA:Arniqueira": {
       "distancia": 1445,
       "tempo": 18.0625
     }
   },
   {
-    "Rio de Janeiro:Vitoria": {
+    "Varjão:Samambaia": {
       "distancia": 521,
       "tempo": 6.5125
     },
-    "Rio de Janeiro:Sao Paulo": {
+    "Varjão:Plano Piloto": {
       "distancia": 429,
       "tempo": 5.3625
     },
-    "Rio de Janeiro:Guara": {
+    "Varjão:Guara": {
       "distancia": 1445,
       "tempo": 5.425
     }
   },
   {
-    "Salvador:Guara": {
+    "Sobradinho II:Guara": {
       "distancia": 1372,
       "tempo": 17.15
     },
-    "Salvador:Goiania": {
+    "Sobradinho II:Sobradinho": {
       "distancia": 1643,
       "tempo": 20.5375
     },
-    "Palmas:Salvador": {
+    "Nucleo Bandeirante:Sobradinho II": {
       "distancia": 1500,
       "tempo": 18.75
     },
-    "Salvador:Teresina": {
+    "Sobradinho II:Aguas Claras": {
       "distancia": 1163,
       "tempo": 14.5375
     },
-    "Salvador:Vitoria": {
+    "Sobradinho II:Samambaia": {
       "distancia": 1202,
       "tempo": 15.025
     },
-    "Recanto das Emas:Salvador": {
+    "Recanto das Emas:Sobradinho II": {
       "distancia": 356,
       "tempo": 4.45
     },
-    "Salvador:Maceio": {
+    "Sobradinho II:Jardim Botanico": {
       "distancia": 632,
       "tempo": 7.9
     },
-    "Salvador:Recife": {
+    "Sobradinho II:Fercal": {
       "distancia": 839,
       "tempo": 10.4875
     }
   },
   {
-    "Sao Luis:Taguatinga": {
+    "Santa Maria:Taguatinga": {
       "distancia": 806,
       "tempo": 10.075
     },
-    "Sao Luis:Teresina": {
+    "Santa Maria:Aguas Claras": {
       "distancia": 446,
       "tempo": 5.575
     },
-    "Sao Luis:Palmas": {
+    "Santa Maria:Nucleo Bandeirante": {
       "distancia": 1386,
       "tempo": 17.325
     }
   },
   {
-    "Sao Paulo:Guara": {
+    "Plano Piloto:Guara": {
       "distancia": 586,
       "tempo": 7.325
     },
-    "Sao Paulo:Riacho Fundo 2": {
+    "Plano Piloto:Riacho Fundo 2": {
       "distancia": 1014,
       "tempo": 12.675
     },
-    "Sao Paulo:Gama": {
+    "Plano Piloto:Gama": {
       "distancia": 408,
       "tempo": 5.1
     },
-    "Sao Paulo:Rio de Janeiro": {
+    "Plano Piloto:Varjão": {
       "distancia": 429,
       "tempo": 5.3625
     }
   },
   {
-    "Teresina:Asa Norte": {
+    "Aguas Claras:Asa Norte": {
       "distancia": 634,
       "tempo": 7.925
     },
-    "Teresina:Palmas": {
+    "Aguas Claras:Nucleo Bandeirante": {
       "distancia": 1401,
       "tempo": 17.5125
     },
-    "Teresina:Recife": {
+    "Aguas Claras:Fercal": {
       "distancia": 1137,
       "tempo": 14.125
     },
-    "Teresina:Salvador": {
+    "Aguas Claras:Sobradinho II": {
       "distancia": 1163,
       "tempo": 14.5375
     },
-    "Teresina:Sao Luis": {
+    "Aguas Claras:Santa Maria": {
       "distancia": 446,
       "tempo": 5.575
     }
   },
   {
-    "Vitoria:Rio de Janeiro": {
+    "Samambaia:Varjão": {
       "distancia": 521,
       "tempo": 6.5125
     },
-    "Vitoria:Salvador": {
+    "Samambaia:Sobradinho II": {
       "distancia": 1202,
       "tempo": 15.025
     },
-    "Vitoria:Guara": {
+    "Samambaia:Guara": {
       "distancia": 524,
       "tempo": 6.55
     }

@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
 import { GraphVisualizator } from "./components/GraphVisualizator";
-import { passeios } from "./data/passeios";
+import { locaisData } from "./data/locais";
 import { rotas } from "./data/rotas";
 import { rotasWH } from "./data/rotasWH";
 import { Graph } from "./services/graph";
 import { IntervalScheduling } from "./services/IntervalScheduling";
-
-import backImg from './assets/poke.jpg';
-import { url } from "inspector";
 
 function App() {
   const grafo = new Graph(rotasWH);
@@ -20,7 +17,7 @@ function App() {
   const [nodeSelected, updateNodeSelected] = useState<any>();
 
   useEffect(() => {
-    const listaDeLocais = passeios
+    const listaDeLocais = locaisData
       .map((it: any) => Object.keys(it)[0]) as Array<string>;
 
     setLocais([...new Set(listaDeLocais)]);
@@ -29,7 +26,7 @@ function App() {
   useEffect(() => {
     const data = [] as any;
 
-    const listaDeLocais = passeios
+    const listaDeLocais = locaisData
       .map((it: any) => Object.keys(it)[0]) as Array<string>;
 
     listaDeLocais.forEach(loc => data.push(setNode(loc.replaceAll(" ", ""), loc)));
@@ -55,12 +52,12 @@ function App() {
     e.preventDefault();
     // let localInicial = 'Belem';
     // let localFinal = 'Campo Grande';
-    let passeioCadaCidade = null; // 'on'
+    let isReideEmCadaLocal = null; // 'on'
     let horaPartida = parseFloat('12:00'.replace(":", ""));
     let interval = new IntervalScheduling();
     let destinos;
     
-    if (passeioCadaCidade != null) {
+    if (isReideEmCadaLocal != null) {
       destinos = grafo
         .menorCaminho(localInicial, localFinal, true)
         .concat([localInicial])
@@ -74,7 +71,7 @@ function App() {
 
     let tempoTotal = [];
 
-    if (passeioCadaCidade != null) {
+    if (isReideEmCadaLocal != null) {
       tempoTotal.push(grafo.tempoTotal[0] + horaPartida / 100);
 
       for (let i = 1; i < grafo.tempoTotal.length; i++) {
@@ -98,10 +95,10 @@ function App() {
     while (destinos.length > l) {
       var ultimaCidade = destinos[destinos.length - 1];
       var cidadeAtual = destinos[l];
-      //  if (passeioCadaCidade != 'on') {cidadeAtual=ultimaCidade}
+      //  if (isReideEmCadaLocal != 'on') {cidadeAtual=ultimaCidade}
       var horarios = [];
-      for (var i = 0; i < passeios.length; i++) {
-        var obj = passeios[i];
+      for (var i = 0; i < locaisData.length; i++) {
+        var obj = locaisData[i];
         for (var cidade in obj) {
           var value = obj[cidade];
           if (cidade == cidadeAtual) {
@@ -125,7 +122,7 @@ function App() {
               if (hor1.fim > hor2.fim) return 1;
               return 0;
             });
-            if (passeioCadaCidade != null) {
+            if (isReideEmCadaLocal != null) {
               var horariosScheduling = interval.calculaScheduling(
                 horarios.length,
                 horarios,
@@ -210,6 +207,7 @@ function App() {
   }
 
   function getNodeSelected(node: any): void {
+    console.log(node)
     setLocalInicial((nodeAnt: any) => {
       if (nodeAnt) {
         setLocalFinal(node);

@@ -1,4 +1,4 @@
-export const passeios: any = [
+export const locaisData: any = [
   {
     "Recanto das Emas": {
       "City Tour Recanto das Emas": [
@@ -607,7 +607,7 @@ export const passeios: any = [
           "fim": "20:00"
         }
       ],
-      "Jardim Botânico": [
+      "Jardim Botanico": [
         {
           "inicio": "07:00",
           "fim": "09:00"
@@ -768,7 +768,7 @@ export const passeios: any = [
     }
   },
   {
-    "Goiania": {
+    "Sobradinho": {
       "Praça Cívica": [
         {
           "inicio": "07:00",
@@ -908,7 +908,7 @@ export const passeios: any = [
     }
   },
   {
-    "Joao Pessoa": {
+    "Vicente Pires": {
       "City Tour Completo": [
         {
           "inicio": "10:00",
@@ -936,7 +936,7 @@ export const passeios: any = [
     }
   },
   {
-    "Macapa": {
+    "Paranoa": {
       "Fortaleza de Sao José do Amapá": [
         {
           "inicio": "08:00",
@@ -1032,7 +1032,7 @@ export const passeios: any = [
     }
   },
   {
-    "Maceio": {
+    "Jardim Botanico": {
       "Museu Palácio Floriano Peixoto": [
         {
           "inicio": "08:00",
@@ -1108,7 +1108,7 @@ export const passeios: any = [
     }
   },
   {
-    "Manaus": {
+    "Arniqueira": {
       "Praça de Sao Sebastião": [
         {
           "inicio": "07:00",
@@ -1201,7 +1201,7 @@ export const passeios: any = [
     }
   },
   {
-    "Natal": {
+    "SCIA": {
       "PASSEIO DE Sao MIGUEL DO GOSTOSO": [
         {
           "inicio": "07:00",
@@ -1245,7 +1245,7 @@ export const passeios: any = [
     }
   },
   {
-    "Palmas": {
+    "Nucleo Bandeirante": {
       "Escola Municipal": [
         {
           "inicio": "09:00",
@@ -1259,7 +1259,7 @@ export const passeios: any = [
     }
   },
   {
-    "Porto Alegre": {
+    "Park Way": {
       "LINHA TURISMO": [
         {
           "inicio": "09:00",
@@ -1379,7 +1379,7 @@ export const passeios: any = [
     }
   },
   {
-    "Porto Velho": {
+    "Candangolandia": {
       "Catedral Sagrado Coração de Jesus": [
         {
           "inicio": "09:00",
@@ -1410,7 +1410,7 @@ export const passeios: any = [
           "fim": "16:00"
         }
       ],
-      "Mercado Cultural de Porto Velho": [
+      "Mercado Cultural de Candangolandia": [
         {
           "inicio": "07:00",
           "fim": "09:00"
@@ -1444,7 +1444,7 @@ export const passeios: any = [
           "fim": "23:00"
         }
       ],
-      "Mercado Central de Porto Velho": [
+      "Mercado Central de Candangolandia": [
         {
           "inicio": "09:00",
           "fim": "11:00"
@@ -1507,7 +1507,7 @@ export const passeios: any = [
     }
   },
   {
-    "Recife": {
+    "Fercal": {
       "Cais do Sertão": [
         {
           "inicio": "09:00",
@@ -1619,8 +1619,8 @@ export const passeios: any = [
     }
   },
   {
-    "Rio Branco": {
-      "Palácio Rio Branco": [
+    "SIA": {
+      "Palácio SIA": [
         {
           "inicio": "07:00",
           "fim": "09:00"
@@ -1723,7 +1723,7 @@ export const passeios: any = [
     }
   },
   {
-    "Rio de Janeiro": {
+    "Varjão": {
       "Cristo Redentor": [
         {
           "inicio": "09:00",
@@ -1798,7 +1798,7 @@ export const passeios: any = [
           "fim": "18:00"
         }
       ],
-      "Jardim Botânico": [
+      "Jardim Botanico": [
         {
           "inicio": "08:00",
           "fim": "10:00"
@@ -1823,7 +1823,7 @@ export const passeios: any = [
     }
   },
   {
-    "Salvador": {
+    "Sobradinho II": {
       "Mercado Modelo": [
         {
           "inicio": "09:00",
@@ -1935,7 +1935,7 @@ export const passeios: any = [
     }
   },
   {
-    "Sao Luis": {
+    "Santa Maria": {
       "Casa do Maranhão": [
         {
           "inicio": "09:00",
@@ -2067,8 +2067,8 @@ export const passeios: any = [
     }
   },
   {
-    "Sao Paulo": {
-      "Sao Paulo bem do alto": [
+    "Plano Piloto": {
+      "Plano Piloto bem do alto": [
         {
           "inicio": "09:00",
           "fim": "11:00"
@@ -2175,7 +2175,7 @@ export const passeios: any = [
     }
   },
   {
-    "Teresina": {
+    "Aguas Claras": {
       "Mirante da ponte Estaiada": [
         {
           "inicio": "11:00",
@@ -2279,7 +2279,7 @@ export const passeios: any = [
     }
   },
   {
-    "Vitoria": {
+    "Samambaia": {
       "Fábrica de chocolates da Garoto": [
         {
           "inicio": "09:00",

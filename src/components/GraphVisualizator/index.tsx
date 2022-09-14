@@ -47,8 +47,6 @@ export function GraphVisualizator({ title, graphData, layoutName, setNodeSelecte
                   "background-fit": "contain",
                 });
 
-                cy.elements(`label#${item.data.id}`);
-
                 cy.elements(`node#${item.data.id}`).addListener('click', () => {
                   //console.log(item.data)
                   setNodeSelected(item.data.label);
